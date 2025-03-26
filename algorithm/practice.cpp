@@ -5,7 +5,7 @@
 using namespace std;
 
 const int N = 1e7 + 10;
-int a[N];
+int a[N] = {0};
 void setprime(int r);
 int main() {
     int l, r;
@@ -55,8 +55,7 @@ void setprime(int r) {
             }
         }
         if(value) {
-            a[n] = i;
+            a[n++] = i;
         }
-        n++;
     }
 }
